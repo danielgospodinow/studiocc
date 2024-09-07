@@ -1,0 +1,180 @@
+---
+import Polka from "@components/base/Polka.astro";
+import Card from "@components/base/Card.astro";
+---
+
+<div x-cloak class="relative overflow-hidden" x-intersect="activeStep = ''">
+  <div x-data="swiper()" class="carousel-container">
+    <div class="carousel-controls flex items-center justify-end mb-4">
+      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slidePrev()">
+        <iconify-icon class="iconify" icon="lucide:arrow-left"></iconify-icon>
+      </button>
+
+      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slideNext()">
+        <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
+      </button>
+    </div>
+    <div class="swiper-container" x-ref="container">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
+              <p class="text-muted-500 dark:text-muted-300">
+                Absolutely the best barber shop in Plovdiv!
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="/public/img/illustrations/dg.jpg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Daniel Gospodinov
+                  </h4>
+                  <p class="text-xs text-muted-400">Sofia, Bulgaria</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
+              <p class="text-muted-500 dark:text-muted-300">
+                I went for a haircut and I was amazed by the quality of the
+                service. I will definitely come back!
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="/public/img/illustrations/st.jpg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Alexander Tonev
+                  </h4>
+                  <p class="text-xs text-muted-400">Sofia, Bulgaria</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
+              <p class="text-muted-500 dark:text-muted-300">
+                I had a great experience at Studio Clean Cutz. The staff is
+                friendly and professional.
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="/public/img/illustrations/ki.jpg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Kristian Ivanov
+                  </h4>
+                  <p class="text-xs text-muted-400">Plovdiv, Bulgaria</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
+              <p class="text-muted-500 dark:text-muted-300">
+                I visited Studio Clean Cutz for the first time and I was
+                impressed by the quality of the service.
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="/public/img/illustrations/mg.jpg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Milen Georgiev
+                  </h4>
+                  <p class="text-xs text-muted-400">San Diego, CA</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
+              <p class="text-muted-500 dark:text-muted-300">
+                One of the best barber shops in Plovdiv. I highly recommend it!
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="/public/img/illustrations/vn.jpg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Valeri Nanev
+                  </h4>
+                  <p class="text-xs text-muted-400">Sofia, Bulgaria</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+        <div class="swiper-slide">
+          <Card class="'p-6'">
+            <div class="w-full flex flex-col gap-8 font-sans">
+              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
+              <p class="text-muted-500 dark:text-muted-300">
+                Probably the best haircut I've had in years! Absolutely recommend!
+              </p>
+              <div class="w-full flex items-center gap-3">
+                <div class="shrink-0 inline-flex relative w-10 h-10">
+                  <img
+                    src="/public/img/illustrations/ga.jpg"
+                    class="object-cover max-w-full rounded-full dark:border-transparent shadow-sm"
+                    alt="User image"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    Georgi Angelov
+                  </h4>
+                  <p class="text-xs text-muted-400">Paris, FR</p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

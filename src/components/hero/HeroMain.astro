@@ -1,0 +1,55 @@
+---
+import ButtonMain from "@components/base/ButtonMain.astro";
+import ButtonSub from "@components/base/ButtonSub.astro";
+import HeroMainModuleOne from "@components/hero/HeroMainModuleOne.astro";
+---
+
+<div
+  class="min-h-screen w-full overflow-hidden bg-muted-100 dark:bg-muted-1000"
+>
+  <div class="min-h-screen w-full max-w-7xl mx-auto flex items-center px-4">
+    <div class="w-full grid grid-cols-12">
+      <div class="col-span-12 ltablet:col-span-5 lg:col-span-5">
+        <div
+          class="h-full ptablet:max-w-lg ptablet:mx-auto flex items-center mb-8 ltablet:mb-0 lg:mb-0"
+        >
+          <div
+            class="text-center ltablet:text-left lg:text-left font-sans space-y-4"
+          >
+            <h1
+              class="font-medium text-4xl ptablet:text-5xl lg:text-5xl text-muted-800 dark:text-white"
+            >
+              Studio Clean Cutz
+            </h1>
+            <p class="text-lg text-muted-500 dark:text-muted-400">
+              boulevard "Knyaginya Maria Luiza" 41, Plovdiv
+            </p>
+              <ButtonMain to={"https://www.fresha.com/bg/a/studio-clean-cutz-plovdiv-bul-knyaginya-mariya-luiza-boulevard-knyaginya-maria-luiza-hxbp3i75"} class="'min-w-[400px]'">Book an appointment</ButtonMain
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative col-span-12 ltablet:col-span-7 lg:col-span-7">
+      <a
+        href="https://www.google.com/maps?daddr=%D0%B1%D1%83%D0%BB.+%E2%80%9E%D0%9A%D0%BD%D1%8F%D0%B3%D0%B8%D0%BD%D1%8F+%D0%9C%D0%B0%D1%80%D0%B8%D1%8F+%D0%9B%D1%83%D0%B8%D0%B7%D0%B0%E2%80%9C,+boulevard+%22Knyaginya+Maria+Luiza%22,+41,+Plovdiv"
+      >
+        <img
+          src="/public/location.png"
+          class="block dark:hidden w-full ltablet:max-w-[540px] max-w-[620px] mx-auto"
+          alt="Hero image"
+        />
+      </a>
+      <a
+        href="https://www.google.com/maps?daddr=%D0%B1%D1%83%D0%BB.+%E2%80%9E%D0%9A%D0%BD%D1%8F%D0%B3%D0%B8%D0%BD%D1%8F+%D0%9C%D0%B0%D1%80%D0%B8%D1%8F+%D0%9B%D1%83%D0%B8%D0%B7%D0%B0%E2%80%9C,+boulevard+%22Knyaginya+Maria+Luiza%22,+41,+Plovdiv"
+      >
+        <img
+          src="/public/location.png"
+          class="hidden dark:block w-full ltablet:max-w-[540px] max-w-[620px] mx-auto"
+          alt="Hero image"
+        />
+      </a>
+
+      <!-- <HeroMainModuleOne /> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,217 @@
+---
+import Card from "@components/base/Card.astro";
+---
+
+<div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10">
+  <div x-show="activeCategory === 'all' || activeCategory === 'cardiology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="https://cdn-partners-api.fresha.com/employee-avatars/processed/380296/medium/07569398-4ab8-4f86-9665-d802fd1143df-IMG_8550.png?class=square128"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Pavel
+        </h4>
+        <p class="text-sm text-muted-400">Barber</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Specialized in haircuts and beard trimming.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <!-- <div class="flex items-center gap-2">
+          <button
+            tooltip="Book appointment"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="Send message"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="View profile"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
+          </button>
+        </div> -->
+        <div class="flex items-center justify-end gap-2">
+          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
+            >5/5</span
+          >
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'gynaecology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="https://cdn-partners-api.fresha.com/employee-avatars/processed/374650/medium/d9a834da-347e-4f26-9d2a-1481e7a90030-IMG_8487.png?class=square128"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Rainov
+        </h4>
+        <p class="text-sm text-muted-400">Barber</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Specializes in haircuts and beard trimming.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <!-- <div class="flex items-center gap-2">
+          <button
+            tooltip="Book appointment"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="Send message"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="View profile"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
+          </button>
+        </div> -->
+        <div class="flex items-center justify-end gap-2">
+          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
+            >4.9/5</span
+          >
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'neurology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="https://cdn-partners-api.fresha.com/employee-avatars/processed/374640/medium/96cf877d-5bcf-413e-af18-4288c138f63a-IMG_8488.png?class=square128"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Ivan
+        </h4>
+        <p class="text-sm text-muted-400">Barber</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Specializes in haircuts and beard trimming.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <!-- <div class="flex items-center gap-2">
+          <button
+            tooltip="Book appointment"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="Send message"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="View profile"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
+          </button>
+        </div> -->
+        <div class="flex items-center justify-end gap-2">
+          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
+            >4.9/5</span
+          >
+        </div>
+      </div>
+    </Card>
+  </div>
+  <!-- Doctor -->
+  <div x-show="activeCategory === 'all' || activeCategory === 'dermatology'">
+    <Card class="'p-4'">
+      <div
+        class="relative w-full h-40 rounded-lg bg-muted-200 dark:bg-muted-800"
+      >
+        <img
+          class="absolute bottom-0 inset-x-0 mx-auto w-full max-w-[170px] ptablet:max-w-[150px]"
+          src="https://cdn-partners-api.fresha.com/employee-avatars/processed/374641/medium/84c5f794-117a-43dd-a92b-b8e3a193bf39-IMG_8490.png?class=square128"
+          alt="Doctor"
+        />
+      </div>
+      <div class="font-sans mt-3">
+        <h4 class="font-semibold text-muted-800 dark:text-muted-100">
+          Bozhidar
+        </h4>
+        <p class="text-sm text-muted-400">Barber</p>
+      </div>
+      <div class="mt-2">
+        <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
+          Specializes in haircuts and beard trimming.
+        </p>
+      </div>
+      <div class="flex items-center justify-between font-sans mt-3">
+        <!-- <div class="flex items-center gap-2">
+          <button
+            tooltip="Book appointment"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:calendar-check-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="Send message"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:chat-circle-duotone"></iconify-icon>
+          </button>
+          <button
+            tooltip="View profile"
+            class="h-8 w-8 rounded-full text-muted-400 hover:text-primary-500 hover:enabled:bg-muted-100 dark:hover:enabled:bg-muted-800 flex items-center justify-center tw-accessiblity transition-colors duration-300"
+          >
+            <iconify-icon class="iconify w-4 h-4" icon="ph:user-duotone"></iconify-icon>
+          </button>
+        </div> -->
+        <div class="flex items-center justify-end gap-2">
+          <iconify-icon class="iconify w-4 h-4 text-yellow-400" icon="uiw:star-on"></iconify-icon>
+          <span class="font-semibold text-xs text-muted-500 dark:text-muted-400"
+            >5/5</span
+          >
+        </div>
+      </div>
+    </Card>
+  </div>
+</div>
